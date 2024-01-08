@@ -1,6 +1,11 @@
 #ifndef BIN_H
 #define BIN_H
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+
 /**
  * struct binary_tree_s - Binary tree node
  *
