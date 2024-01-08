@@ -1,8 +1,8 @@
 #include "binary_trees.h"
 
-/*
-
-*/
+/**
+ * binary_tree_delete - free the binary tree
+ */
 
 void binary_tree_delete(binary_tree_t *tree)
 {
