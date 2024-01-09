@@ -8,15 +8,16 @@
 
 int binary_tree_is_leaf(const binary_tree_t *node)
 {
-	if (node == NULL)
-		return (0);
-
 	binary_tree_t *new_node;
 
+	if (node == NULL)
+		return (NULL);
+
 	new_node = malloc(sizeof(binary_tree_t));
+
 	if (new_node == NULL)
 	{
-		return (0);
+		return (NULL);
 	}
 
 	new_node->parent = node->parent;
