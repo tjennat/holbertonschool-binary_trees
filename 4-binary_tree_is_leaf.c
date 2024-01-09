@@ -10,26 +10,20 @@ int binary_tree_is_leaf(const binary_tree_t *node)
 {
 	binary_tree_t *new_node;
 
-	if (node == NULL)
-		return (NULL);
+	if (!node)
+		return (0);
 
 	new_node = malloc(sizeof(binary_tree_t));
 
-	if (new_node == NULL)
-	{
-		return (NULL);
-	}
+	if (!new_node)
+		return (0);
 
 	new_node->parent = node->parent;
 	new_node->left = node->left;
 	new_node->right = node->right;
 
-	if (new_node->left == NULL && new_node->right == NULL)
-	{
+	if (!new_node->left && !new_node->right)
 		return (1);
-	}
 	else
-	{
 		return (0);
-	}
 }
